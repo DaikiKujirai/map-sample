@@ -1,0 +1,11 @@
+<div id="map"></div><!-- 地図を表示する div 要素（id="map"）-->
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 35.644449, lng: 139.618597},
+      zoom: 17
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Fkhjw3okHJaxq6lktWYWXt_8QNT3sDw&callback=initMap" async defer></script>
